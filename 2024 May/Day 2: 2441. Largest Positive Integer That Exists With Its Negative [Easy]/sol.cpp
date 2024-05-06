@@ -10,7 +10,7 @@ public:
             else l++;
         }
 
-        return (l<r) ? nums[r]:-1;
+        return (l<r) ? nums[r] : -1;
     }
 };
 

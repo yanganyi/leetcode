@@ -3,7 +3,8 @@ class Solution:
         a=-1
         nums=set(nums)
         for i in nums:
-            if i>a and -i in nums: a=i
+            if i>a and -i in nums:
+                a=i
         return a
     
 # Python    
