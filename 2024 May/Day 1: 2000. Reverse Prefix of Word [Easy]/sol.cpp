@@ -7,7 +7,6 @@ public:
                 break;
             }
         }
-
         return word;
     }
 };
