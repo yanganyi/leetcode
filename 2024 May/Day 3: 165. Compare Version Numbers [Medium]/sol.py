@@ -8,6 +8,7 @@ class Solution:
         while v1!=[] and int(v1[l1])==0:
             v1.pop()
             l1-=1
+
         while v2!=[] and int(v2[l2])==0:
             v2.pop()
             l2-=1

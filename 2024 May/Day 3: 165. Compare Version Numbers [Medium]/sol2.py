@@ -2,6 +2,7 @@ class Solution:
     def compareVersion(self, version1: str, version2: str) -> int:
         v1=version1.split(".")
         v2=version2.split(".")
+
         l1=len(v1)-1
         l2=len(v2)-1
 
