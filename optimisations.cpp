@@ -7,5 +7,6 @@ const int ZERO = []()
 	return 0;
 }();
 
+
 // these are some optimisations you can add to your code if you just need that small amount of speed boost
 // also possible: use other pragmas as well
