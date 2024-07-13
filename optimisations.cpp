@@ -19,24 +19,3 @@ static const int __ = [](){
     cout.tie(nullptr);
     return 0;
 }();
-
-int init = [] {
-    ofstream out("user.out");
-    cout.rdbuf(out.rdbuf());
-    for (string str; getline(cin, str); cout << '\n') {
-        if (str.find(',') == string::npos) {
-            cout << str;
-            continue;
-        }
-        stringstream ss(str); ss.ignore();
-        int prev; ss >> prev; ss.ignore();
-        cout << '[' << prev;
-        for (int curr; ss >> curr; ss.ignore()) {
-            cout << ',' << gcd(prev, curr) << ',' << curr;
-            prev = curr;
-        }
-        cout << ']';
-    }
-    exit(0);
-    return 0;
-}();
