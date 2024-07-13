@@ -13,7 +13,7 @@ const int ZERO = []()
 
 // below is some stuff i saw other users using, seems to work
 
- static const int __ = [](){
+static const int __ = [](){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
