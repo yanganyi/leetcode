@@ -1,11 +1,14 @@
 class Solution:
-    def minimumDeletions(self, s: str) -> int:
-        ct,ans=0,0
-        for i in s[::-1]:
-            if i=='a': ct+=1
-            else: ans=min(ct,ans+1)
+    def minimumDeletions(self, s):
+        ans,ct=0,0
+        for i in s:
+            if i=='b':
+                ct+=1
+            elif ct:
+                ans+=1
+                ct-=1
         return ans
     
 # Python    
-# 248 ms (beats 74.67%)
-# 17.20 mb (beats 100.00%)
+# 150 ms (beats 98.00%)
+# 17.54 mb (beats 92.33%)
